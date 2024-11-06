@@ -252,3 +252,8 @@ Please refer to `2.3 esvo_core/mvstereo`.
 * **23/02/2021** ESVO was integrated into the modular iniVation DV software platform. 
 It runs at up to 200 fps on Jetson TX2, and is fully open-source. 
 Download here: https://lnkd.in/deuRKSK.
+
+# 8. Use in real
+为了测试不同的触发频率对tracking效果的影响，我们需要修改
+   `$ rostopic hz /TS_left`
+   `$ rostopic hz /TS_right`

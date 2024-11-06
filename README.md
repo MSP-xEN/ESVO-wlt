@@ -257,3 +257,11 @@ Download here: https://lnkd.in/deuRKSK.
 为了测试不同的触发频率对tracking效果的影响，我们需要修改
    `$ rostopic hz /TS_left`
    `$ rostopic hz /TS_right`
+   
+在文件夹中找到
+
+`$ esvo_core/src/esvo_Tracking.cpp` `$ esvo_core/src/esvo_Mapping.cpp`
+
+修改其中的   `$ rostopic hz /TS_left` `$ rostopic hz /TS_right`，注意，两个cpp文件中的话题需要保持一致才能跑成功。不要忘了修改后编译。
+
+相关的测试结果共享在excel中，大家可以查看。
